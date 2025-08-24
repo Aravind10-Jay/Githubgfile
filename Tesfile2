@@ -1,0 +1,18 @@
+import random
+
+class users:
+    def __init__(self, Username):
+        self.Username = Username
+        self.randnumber = random.randint(100000, 999999)
+    
+    def display(self):
+        print("Username:", self.Username)
+        print("Random Password:", self.randnumber)
+input_username = input("Enter your username: ")
+if input_username:
+    user = users(input_username)
+else:   
+    pass
+user = users()
+user.display()
+    
